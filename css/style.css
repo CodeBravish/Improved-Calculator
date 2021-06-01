@@ -1,0 +1,180 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 700;
+	font-size: 1rem;
+}
+
+:root {
+	--bg-colour: rgb(32, 32, 32);
+	--dark: rgba(0, 0, 0, 0.658);
+	--light: rgba(0, 0, 0, 0.315);
+	--button-height: 7rem;
+}
+
+body {
+	background-color: var(--bg-colour);
+}
+
+.calculator-grid {
+	width: 90%;
+	max-width: 28rem;
+	margin: 0 auto;
+	margin-top: 10vh;
+	color: white;
+}
+
+
+
+/*######################
+===================
+ CALCULATOR BUTTONS
+============
+#####*/
+#delete {
+	/* transition-property: background-color; */
+}
+
+.calculator-grid button {
+	background-color: var(--dark);
+	border: 0.12rem solid var(--bg-colour);
+	color: white;
+}
+
+.light-row button {
+	background-color: var(--light);
+}
+
+.calculator-grid > div {
+	display: flex;
+	justify-content: space-between;
+}
+
+button {
+	width: 25%;
+	height: var(--button-height);
+}
+
+button:last-child {
+	background-color: var(--light);
+}
+
+#equal {
+	background-color: rgba(53, 80, 99, 0.308);
+}
+
+.span-two {
+	width: 50%;
+}
+
+.operand, #equal {
+	font-size: 2rem;
+	font-weight: 300;
+}
+
+
+
+/*######################
+===================
+ OUTPUT
+============
+#####*/
+.output {
+	background-color: var(--bg-colour);
+	/* background-color: rgb(104, 104, 104); */
+	min-height: var(--button-height);
+	width: 100%;
+	border: 0.12rem solid var(--bg-colour);
+
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	justify-content: space-between;
+	padding: 1rem 0.5rem;
+	padding-bottom: 2rem;
+}
+
+.previous-equation {
+	font-size: 1rem;
+	font-weight: 300;
+	opacity: 0.7;
+	margin-bottom: 0.7rem;
+}
+
+.current-equation {
+	font-size: 3rem;
+	word-wrap: break-word;
+	word-break: break-all;
+}
+
+
+
+/*######################
+===================
+ HOVER STATES
+============
+#####*/
+/* #delete:active,
+#delete:focus {
+	animation: red 500ms ease-out forwards 1 ;
+} */
+
+#delete:active {
+	background-color: rgba(255, 0, 0, 0.719)
+}
+
+
+@keyframes red {
+	0% {
+		background-color: var(--light);
+	}
+
+	50% {
+		background-color: rgba(255, 0, 0, 0.719);
+	}
+
+	100% {
+		background-color: var(--light);
+	}
+}
+
+
+.calculator-grid button:hover {
+	background-color: rgba(94, 94, 94, 0.411);
+}
+
+.calculator-grid button:focus {
+	z-index: 1000;
+}
+
+.calculator-grid button:active {
+	background-color: rgba(94, 94, 94, 0.637);
+}
+
+#equal:hover {
+	background-color: rgba(89, 113, 129, 0.562);
+}
+
+#equal:active {
+	background-color: rgba(89, 113, 129, 0.973);
+}
+
+
+
+/*######################
+===================
+ MEDIA QUERIES
+============
+#####*/
+
+@media (max-width: 350px) {
+	.calculator-grid {
+		width: 100%;
+		max-width: 38rem;
+		margin-top: 0;
+	}
+	:root {
+	--button-height: 15vh;
+	}
+}
