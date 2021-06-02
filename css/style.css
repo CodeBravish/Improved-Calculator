@@ -92,7 +92,6 @@ button:last-child {
 	min-height: var(--button-height);
 	width: 100%;
 	border: 0.12rem solid var(--bg-colour);
-	border: 0.12rem solid white;
 
 	display: flex;
 	flex-direction: column;
