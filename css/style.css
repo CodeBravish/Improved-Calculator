@@ -176,13 +176,16 @@ button:last-child {
 ============
 #####*/
 
-@media (max-width: 350px) {
+@media (max-width: 550px) {
 	.calculator-grid {
 		width: 100%;
 		max-width: 38rem;
 		margin-top: 0;
 	}
+	body {
+		top: 0;
+	}
 	:root {
-	--button-height: 15vh;
+	--button-height: 13vh;
 	}
 }
