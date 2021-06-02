@@ -26,10 +26,8 @@ body {
 }
 
 #title h1 {
-	margin: 0 auto;
-	position: relative;
-	bottom: 2rem;
-	font-size: 1.5rem;
+
+	font-size: 1rem;
 	color: rgb(70, 71, 77);
 }
 
@@ -96,7 +94,7 @@ button:last-child {
 	display: flex;
 	flex-direction: column;
 	align-items: flex-end;
-	height: 10rem;
+	min-height: 10rem;
 	justify-content: space-between;
 	padding: 1rem 0.5rem;
 	padding-bottom: 1rem;
