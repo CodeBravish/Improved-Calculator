@@ -33,8 +33,9 @@ body {
 #title h1 {
 	position: relative;
 	top: .3rem;
+	left: .4rem;
 	font-size: 1rem;
-	color: rgba(155, 160, 192, 0.384);
+	color: rgba(155, 160, 192, 0.24);
 }
 
 /*######################
@@ -185,7 +186,7 @@ button:last-child {
 
 @media (max-width: 550px) {
 	.calculator-grid {
-		width: 100%;
+		width: 95%;
 		max-width: 38rem;
 		margin-top: 0;
 	}
@@ -193,7 +194,7 @@ button:last-child {
 		top: 0;
 	}
 	:root {
-	--button-height: 13vh;
+	--button-height: 12vh;
 	}
 	button {
 		border-radius: 1.5rem;
