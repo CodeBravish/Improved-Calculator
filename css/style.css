@@ -183,7 +183,7 @@ button:last-child {
 ============
 #####*/
 
-@media (max-width: 510px) {
+@media (max-width: 550px) {
 	.calculator-grid {
 		width: 100%;
 		max-width: 38rem;
