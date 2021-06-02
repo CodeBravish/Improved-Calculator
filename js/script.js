@@ -34,33 +34,26 @@ class Calculator {
       let computation
       const prev = parseFloat(this.previousOperand)
       const current = parseFloat(this.currentOperand)
-      const firstTerm = this.previousOperand
-      const secondTerm = this.currentOperand
-      const operator = ''
       if (isNaN(prev) || isNaN(current)) return
       switch (this.operation) {
         case '+':
           computation = prev + current
-          operator = ' + ' 
           break
         case '-':
           computation = prev - current
-          operator = ' - ' 
           break
         case '×':
           computation = prev * current
-          operator = ' × ' 
           break
         case '÷':
           computation = prev / current
-          operator = ' ÷ ' 
           break
         default:
           return
       }
       this.currentOperand = computation
       this.operation = undefined
-      this.previousOperand = (first + operator + current + ' =')
+      this.previousOperand = ''
     }
   
     getDisplayNumber(number) {
@@ -87,7 +80,7 @@ class Calculator {
         this.prevEquationTextElement.innerText =
           `${this.getDisplayNumber(this.previousOperand)} ${this.operation}`
       } else {
-        this.prevEquationTextElement.innerText = this.previousOperand
+        this.prevEquationTextElement.innerText = ''
       }
     }
   }
