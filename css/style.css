@@ -15,20 +15,25 @@
 
 body {
 	background-color: var(--bg-colour);
+	position: absolute;
+	width: 100%;
+	height: 100vh;
+	display: flex;
+
 }
 
 .calculator-grid {
 	width: 90%;
 	max-width: 28rem;
 	margin: 0 auto;
-	margin-top: 10vh;
 	color: white;
 }
 
 #title h1 {
-
+	position: relative;
+	top: .3rem;
 	font-size: 1rem;
-	color: rgb(70, 71, 77);
+	color: rgba(155, 160, 192, 0.384);
 }
 
 /*######################
@@ -96,7 +101,7 @@ button:last-child {
 	align-items: flex-end;
 	min-height: 10rem;
 	justify-content: space-between;
-	padding: 1rem 0.5rem;
+	padding: 1rem 1.3rem;
 	padding-bottom: 1rem;
 }
 
