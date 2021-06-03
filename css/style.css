@@ -65,8 +65,11 @@ body {
 button {
 	width: 25%;
 	height: var(--button-height);
-	transition-duration: 500ms;
-	transition-property: border-radius, margin, font-size;
+	/* transition-duration: 600ms; */
+	/* transition-property: border-radius, margin, font-size; */
+	/* transition: transform 200ms ease-in;
+	 */
+	transition: border-radius 600ms, margin 600ms, font-size 600ms, transform 300ms;
 }
 
 button:last-child {
@@ -93,8 +96,9 @@ button:last-child {
 #delete,
 #all-clear {
 	transition-duration: 200ms;
-	transition-property: background-color, border-radius, margin, font-size;
-	transition-timing-function: cubic-bezier(0, 0, 0, 1.07);
+	/* transition-property: background-color, border-radius, margin, font-size;
+	transition-timing-function: cubic-bezier(0, 0, 0, 1.07); */
+	transition: border-radius 600ms, margin 600ms, font-size 600ms, transform 300ms, background-color 300ms cubic-bezier(0, 0, 0, 1.07);
 }
 
 
@@ -150,6 +154,9 @@ button:last-child {
 	background-color: rgba(255, 0, 0, 0.719)
 }
 
+.output > #all-clear:active{
+	background-color: rgba(255, 0, 0, 0.719)
+}
 
 @keyframes red {
 	0% {
@@ -176,6 +183,7 @@ button:last-child {
 
 .calculator-grid button:active {
 	background-color: rgba(94, 94, 94, 0.637);
+	transform: scale(0.95);
 }
 
 #equal:hover {
