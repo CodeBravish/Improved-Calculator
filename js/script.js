@@ -61,6 +61,7 @@ class Calculator {
 		const integerDigits = parseFloat(stringNumber.split('.')[0])
 		const decimalDigits = stringNumber.split('.')[1]
 		let integerDisplay
+
 		if (isNaN(integerDigits)) {
 			integerDisplay = ''
 		} else {
@@ -122,6 +123,7 @@ calculator.updateDisplay()
 
 allClearButton.addEventListener('click', button => {
 calculator.clear()
+
 calculator.updateDisplay()
 })
 

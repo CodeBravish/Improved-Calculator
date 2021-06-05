@@ -121,6 +121,8 @@ button:last-child {
 	justify-content: space-between;
 	padding: 1rem 1.3rem;
 	padding-bottom: 1rem;
+
+	transition-duration: 400ms;
 }
 
 .previous-equation {
@@ -154,11 +156,11 @@ button:last-child {
 	background-color: rgba(255, 0, 0, 0.719)
 }
 
-.output > #all-clear:active{
-	background-color: rgba(255, 0, 0, 0.719)
+#all-clear:active + .output {
+	background-color: rgba(255, 0, 0, 0.719);
 }
 
-@keyframes red {
+/* @keyframes red {
 	0% {
 		background-color: var(--light);
 	}
@@ -170,7 +172,7 @@ button:last-child {
 	100% {
 		background-color: var(--light);
 	}
-}
+} */
 
 
 .calculator-grid button:hover {
